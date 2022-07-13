@@ -5,13 +5,17 @@ const Header = () => {
     let activeStyle = {
         textDecoration: "none ",
         fontWeight: "bold",
-        color:"red"
+        color:"red",
+        margin:'20px'
       };
     return (
         <nav>
             <NavLink style={({ isActive }) =>
               isActive ? activeStyle : undefined
             } to="/home">Home</NavLink>
+            <NavLink style={({ isActive }) =>
+              isActive ? activeStyle : undefined
+            } to="/comments">Comments</NavLink>
             <NavLink style={({ isActive }) =>
               isActive ? activeStyle : undefined
             } to="/friends">Friends</NavLink>
