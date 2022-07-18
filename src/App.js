@@ -10,6 +10,8 @@ import FriendDetail from './components/FriendDetail/FriendDetail';
 import PostDetail from './components/PostDetail/PostDetail';
 import Comments from './components/Comments/Comments';
 import CommentsDetail from './components/CommentsDetail/CommentsDetail';
+import Todos from './components/Todos/Todos';
+import TodoDetail from './components/TodoDetail/TodoDetail';
 
 
 
@@ -22,6 +24,8 @@ function App() {
         <Route exact path="/" element={<Home></Home>}></Route>
         <Route exact path="/home" element={<Home></Home>}></Route>
         <Route exact path="/comments" element={<Comments></Comments>}></Route>
+        <Route exact path="/todos" element={<Todos></Todos>}></Route>
+        <Route path ="/todo/:todoId" element={<TodoDetail></TodoDetail>}></Route>
         <Route path="/comment/:commentId" element ={<CommentsDetail></CommentsDetail>}></Route>
         <Route path="/friends" element={<Friends></Friends>}></Route>
         <Route path="/friend/:friendId" element={<FriendDetail></FriendDetail>}></Route>
